@@ -1,0 +1,6 @@
+Python 3.12.3
+OS: $(uname -s) $(uname -r)
+Make: $(make --version | head -1)
+Bash: 
+tar (GNU tar) 1.35
+sha256sum (GNU coreutils) 9.4
