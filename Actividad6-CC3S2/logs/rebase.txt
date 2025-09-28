@@ -1,0 +1,29 @@
+--- Antes del rebase interactivo ---
+dd58827 Tercer cambio pequeño
+cd57c70 Segundo cambio pequeño
+637cbce Primer cambio pequeño
+cdd1cc0 Revert "Agregar línea de prueba para revert"
+bb74724 Agregar línea de prueba para revert
+--- Ejecutando rebase interactivo ---
+Rebase completado
+[KSuccessfully rebased and updated refs/heads/main.
+--- Después del rebase interactivo ---
+dd58827 Tercer cambio pequeño
+cd57c70 Segundo cambio pequeño
+637cbce Primer cambio pequeño
+cdd1cc0 Revert "Agregar línea de prueba para revert"
+bb74724 Agregar línea de prueba para revert
+--- Visualización gráfica del historial ---
+* dd58827 Tercer cambio pequeño
+* cd57c70 Segundo cambio pequeño
+* 637cbce Primer cambio pequeño
+* cdd1cc0 Revert "Agregar línea de prueba para revert"
+* bb74724 Agregar línea de prueba para revert
+*   d6b9f3b Resuelve el conflicto de fusión entre la versión main y feature/advanced-feature
+|\  
+| * 13c48b7 Agrega la funcion greet como función avanzada
+* | 8a03968 Actualizar el mensaje main.py en la rama main
+|/  
+* 206191a Agrega main.py
+* 2f8e1d4 Configura la documentación base del repositorio
+* 39d1bcc Commit inicial con README.md
