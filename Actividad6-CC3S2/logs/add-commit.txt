@@ -1,0 +1,13 @@
+--- git status después de add ---
+On branch main
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+	new file:   README.md
+
+--- git commit ---
+[main (root-commit) 39d1bcc] Commit inicial con README.md
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
