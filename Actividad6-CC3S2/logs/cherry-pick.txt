@@ -1,0 +1,60 @@
+=== EJERCICIO 3: Creación y gestión de ramas desde commits específicos ===
+--- Paso 1: Identificar commit específico ---
+dd58827 Tercer cambio pequeño
+cd57c70 Segundo cambio pequeño
+637cbce Primer cambio pequeño
+cdd1cc0 Revert "Agregar línea de prueba para revert"
+bb74724 Agregar línea de prueba para revert
+d6b9f3b Resuelve el conflicto de fusión entre la versión main y feature/advanced-feature
+8a03968 Actualizar el mensaje main.py en la rama main
+13c48b7 Agrega la funcion greet como función avanzada
+206191a Agrega main.py
+2f8e1d4 Configura la documentación base del repositorio
+39d1bcc Commit inicial con README.md
+--- Creando rama bugfix/rollback-feature desde commit 2f8e1d4 ---
+Switched to branch 'bugfix/rollback-feature'
+--- Estado actual en la nueva rama ---
+/home/doomsday/DS/CC3S2-25-II/Actividad6-CC3S2/diego-repo
+On branch bugfix/rollback-feature
+nothing to commit, working tree clean
+total 20
+drwxr-xr-x 3 doomsday doomsday 4096 Sep 28 17:53 .
+drwxr-xr-x 4 doomsday doomsday 4096 Sep 28 17:32 ..
+drwxr-xr-x 8 doomsday doomsday 4096 Sep 28 17:54 .git
+-rw-r--r-- 1 doomsday doomsday   14 Sep 28 17:20 CONTRIBUTING.md
+-rw-r--r-- 1 doomsday doomsday   32 Sep 28 17:30 README.md
+--- Paso 2: Modificar archivos y confirmar cambios ---
+[bugfix/rollback-feature 3b98a72] Corregir error en la funcionalidad de rollback
+ 1 file changed, 4 insertions(+)
+ create mode 100644 main.py
+--- Paso 3: Fusionar cambios en la rama main ---
+Switched to branch 'main'
+Auto-merging main.py
+CONFLICT (add/add): Merge conflict in main.py
+Automatic merge failed; fix conflicts and then commit the result.
+--- Resolviendo conflicto de merge ---
+[main 8f9b38b] Merge bugfix/rollback-feature: Combina función avanzada con corrección de errores
+--- Paso 4: Explorar historial después de la fusión ---
+*   8f9b38b Merge bugfix/rollback-feature: Combina función avanzada con corrección de errores
+|\  
+| * 3b98a72 Corregir error en la funcionalidad de rollback
+* | dd58827 Tercer cambio pequeño
+* | cd57c70 Segundo cambio pequeño
+* | 637cbce Primer cambio pequeño
+* | cdd1cc0 Revert "Agregar línea de prueba para revert"
+* | bb74724 Agregar línea de prueba para revert
+* |   d6b9f3b Resuelve el conflicto de fusión entre la versión main y feature/advanced-feature
+|\ \  
+| * | 13c48b7 Agrega la funcion greet como función avanzada
+* | | 8a03968 Actualizar el mensaje main.py en la rama main
+|/ /  
+* / 206191a Agrega main.py
+|/  
+* 2f8e1d4 Configura la documentación base del repositorio
+* 39d1bcc Commit inicial con README.md
+--- Paso 5: Eliminar la rama fusionada ---
+Deleted branch bugfix/rollback-feature (was 3b98a72).
+--- Estado final después de completar Ejercicio 3 ---
+  feature/new-feature
+* main
+Ramas actuales después de eliminar bugfix/rollback-feature
