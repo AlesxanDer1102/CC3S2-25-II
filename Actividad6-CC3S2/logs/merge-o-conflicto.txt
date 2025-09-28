@@ -1,0 +1,9 @@
+Auto-merging main.py
+CONFLICT (content): Merge conflict in main.py
+Automatic merge failed; fix conflicts and then commit the result.
+Conflicto detectado durante merge
+--- Resolución del conflicto ---
+Conflicto resuelto exitosamente combinando ambas versiones:
+- Mantuvo el print actualizado de main
+- Agregó la función greet de la rama feature
+Commit de resolución: d6b9f3b
