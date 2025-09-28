@@ -1,0 +1,5 @@
+* main
+--- Creando nueva rama ---
+--- Lista de ramas después de crear feature/new-feature ---
+  feature/new-feature 206191a Agrega main.py
+* main                206191a Agrega main.py
