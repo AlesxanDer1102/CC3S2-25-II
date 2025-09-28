@@ -1,0 +1,38 @@
+=== EJERCICIO 4: Manipulación y restauración de commits ===
+--- Paso 1: Hacer cambios en main.py ---
+Cambio agregado a main.py:
+print('Este cambio se restablecerá')
+[main 372335f] Introduce un cambio para restablecer
+ 1 file changed, 2 insertions(+)
+--- Paso 2: Usar git reset para deshacer el commit ---
+Estado antes del reset:
+372335f Introduce un cambio para restablecer
+8f9b38b Merge bugfix/rollback-feature: Combina función avanzada con corrección de errores
+3b98a72 Corregir error en la funcionalidad de rollback
+Ejecutando git reset --hard HEAD~1
+HEAD is now at 8f9b38b Merge bugfix/rollback-feature: Combina función avanzada con corrección de errores
+Estado después del reset:
+8f9b38b Merge bugfix/rollback-feature: Combina función avanzada con corrección de errores
+3b98a72 Corregir error en la funcionalidad de rollback
+dd58827 Tercer cambio pequeño
+Verificando que el commit ha sido eliminado del historial y main.py se ha restablecido
+--- Paso 3: Usar git restore para deshacer cambios no confirmados ---
+Estado antes de git restore:
+On branch main
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git restore <file>..." to discard changes in working directory)
+	modified:   README.md
+
+no changes added to commit (use "git add" and/or "git commit -a")
+Ejecutando git restore README.md
+Estado después de git restore:
+On branch main
+nothing to commit, working tree clean
+Verificando que el cambio no confirmado ha sido revertido
+--- RESUMEN EJERCICIO 4 COMPLETADO ---
+1. Cambio en main.py confirmado con commit
+2. Commit deshecho exitosamente con git reset --hard HEAD~1
+3. Archivo main.py restaurado a estado anterior
+4. Cambio no confirmado en README.md revertido con git restore
+5. Working tree limpio después de todas las operaciones
